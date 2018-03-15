@@ -1,0 +1,39 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Get the Latest News</h1>
+          <p class="lead">Scrape and save articles from National Public Radio</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      {{#each articles}}
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title row">
+              <div class="col-md-9">
+                <h3 class="panel-title pull-left"><a href={{this.link}} target="_blank">{{this.title}}</a></h3>
+              </div>
+              <div class="col-md-3">
+              <form action="/save" method="POST">
+                  <input id="article-title" href={{this.link}} type="hidden" name="title" value="{{this.title}}">
+                  <input id="article-link" type="hidden" name="link" value={{this.link}}>
+                  <button type="submit" class="btn btn-outline-primary pull-right">SAVE ARTICLE</button>
+                </form>
+              </div>
+            </div>
+            <div class="card-text">
+              <p>{{this.summary}}</p>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</div>

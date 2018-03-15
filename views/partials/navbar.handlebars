@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #efefef;">
+  <a class="navbar-brand" id="logo" href="/"><img src="./assets/images/NPRLogo.png" class="logoImg">News Scraper</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link active" href="/saved">Saved Articles</a>
+      <form action="/scrape" method="POST" class="navbar-form navbar-left">
+      <button id="scrape" type="submit" class="btn btn-outline-danger">Scrape New Articles</button>
+      </form>
+    </div>
+  </div>
+</nav>

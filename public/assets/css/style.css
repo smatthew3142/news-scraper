@@ -1,0 +1,141 @@
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+}
+p {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.btn-primary {
+  background-color:#4e84c4;
+}
+
+.btn-outline-danger {
+  color:#f15c22;
+  border-color: #f15c22 !important;
+}
+
+.btn-outline-danger:hover{
+  background-color:#f15c22;
+}
+
+.btn-outline-primary {
+  color:white;
+  border-color: white !important;
+}
+
+.btn-outline-primary:hover{
+  background-color:#777;
+}
+
+
+.navbar{
+  position: fixed;
+    top: 0; 
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    z-index: 1;
+}
+
+.navbar a {
+  color: #4e84c4 !important;
+}
+
+.navbar a:hover {
+  color: black !important;
+  text-decoration: none;
+}
+
+.container{
+  padding: 16px;
+  margin-top: 60px;
+}
+
+#logo{
+  margin-left: 64px;
+  font-size: 24px;
+  font-weight: 500;
+  color: black !important;
+ }
+
+.logoImg{
+  height: 36px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.jumbotron {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  overflow: hidden;
+  background-size: 100%;
+  background-position: center;
+  background-image: url(/assets/images/pexels-radio.jpeg);
+  height: 300px;
+  width: 100%;
+}
+
+.card a{
+  color: white;
+}
+
+.card {
+  margin: 10px;
+  color: white;
+}
+
+.card:nth-child(3n+0) {
+    background-color:#f15c22;
+}
+.card:nth-child(3n+1) {
+    background-color:#333;
+}
+
+.card:nth-child(3n+2) {
+    background-color:#4e84c4;
+}
+
+#saveComment {
+    display: block;
+}
+
+footer { 
+  background-color: #4e84c4;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.footer a {
+  color: white !important;
+  text-decoration: none; 
+}
+
+.footer a:hover{
+  color: black !important; 
+}
+
+#deleteComment, #saveComment{
+  float:right;
+}
+
+.form-control {
+  width: 100% !important;
+  margin-top: 35px !important;
+}
+
+.modal-header {
+  background-color: #4e84c4;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+.navbar-brand{
+  margin-left: 0px;
+ }
+
+ .jumbotron{
+  height: 150px;
+ }
+}
