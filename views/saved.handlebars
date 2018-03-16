@@ -18,11 +18,13 @@
               <h3 class="panel-title pull-left"><a href={{this.link}} target="_blank">{{this.title}}</a></h3>
             </div>
             <div class="card-text row">
-              <button id="modalbutton" type="submit" class="btn btn-outline-primary" data-toggle="modal" data-id={{this.id}} data-target="#myModal">View Comments</button>
-
-              <form action="/remove/{{this.id}}">
-                <button type="submit" style="margin-left:5px;"class="btn btn-outline-primary">Remove from SAVED</button>
-              </form>
+              <p>{{this.summary}}</p>
+              <div class="row">
+                <button id="modalbutton" type="submit" class="btn btn-outline-primary" data-toggle="modal" data-id={{this.id}} data-target="#myModal" style="margin-left:20px;">View Comments</button>
+                <form action="/remove/{{this.id}}">
+                  <button type="submit" style="margin-left:5px;"class="btn btn-outline-primary">Remove from SAVED</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>

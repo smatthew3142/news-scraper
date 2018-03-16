@@ -62,8 +62,10 @@ router.post("/save", function(req, res) {
 
   var entry = new Article(newArticleObject);
   console.log("Saved this artcile: " + entry);
+  console.log(entry.summary);
 
   entry.save(function(err, doc) {
+    //console.log(doc);
     if (err) {
       console.log(err);
     }
@@ -85,6 +87,7 @@ router.get("/saved", function(req, res) {
       var articleObj = {
         articles: doc
       };
+      //console.log(doc);
       res.render("saved", articleObj);
     }
   });
