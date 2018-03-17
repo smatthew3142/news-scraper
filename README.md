@@ -11,18 +11,23 @@ The assignment required us to create an app that lets users view and leave comme
 
 ### Buying an Item
 
-![Screen shot](./screenshots/Customer1.png)
+![Screen shot](./assets/images/news1.png)
  * A list of products that can be purchased appears.
  * Input the ID# of the item to be purchased.
 ---
   
   
-![Screen shot2](./screenshots/Customer2.png)
+![Screen shot2](./assets/images/news2.png)
  * Input how many units of the selected product is going to be purchased.
 ---
   
   
-![Screen shot3](./screenshots/Customer3.png)
+![Screen shot3](./assets/images/news3.png)
+ * A reciept is shown .
+ * The customer is asked if they would like to keep shopping. If the answer is yes, the product list appears again. If the answer is no, the session ends.
+---
+
+![Screen shot4](./assets/images/news4.png)
  * A reciept is shown .
  * The customer is asked if they would like to keep shopping. If the answer is yes, the product list appears again. If the answer is no, the session ends.
 ---
